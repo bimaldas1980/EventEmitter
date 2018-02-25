@@ -1,0 +1,14 @@
+table.table-container {
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+table.table-container tr:first-of-type td {
+    vertical-align: top;
+}
+
+table.table-container tr:last-of-type td {
+    width:50%;
+    vertical-align :top;
+}

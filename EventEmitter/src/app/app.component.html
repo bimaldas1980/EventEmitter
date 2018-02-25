@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Evet Emitter</h1>
+ <table class="table-container">
+    <tr>
+      <td colspan="2">
+          <app-game-control (oddEmitter)="OnEmitOddNumber($event)" (evenEmitter)="OnEmitEvenNumber($event)"></app-game-control>
+      </td>
+  </tr>
+  <tr>
+    <td>
+        <h4>Event Counter</h4>
+    </td>
+    <td>
+        <h4>Odd Counter</h4>
+    </td>
+  </tr>
+  <tr>
+      <td>
+          <div *ngFor="let evn of evenCounter">
+            <app-even [evenCounter]="evn"></app-even>
+          </div>
+      </td>
+      <td>
+         <div *ngFor="let odd of oddCounter">
+           <app-odd [oddCounter]="odd"></app-odd>
+         </div>
+      </td>
+    </tr>
+</table>
+</div>
